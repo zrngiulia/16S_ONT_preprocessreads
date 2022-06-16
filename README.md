@@ -7,3 +7,4 @@ It includes the following steps:
 * Demultiplexing of FASTQ files
 * Quality filtering of FASTQ files
 * Trimming and chimera removal
+* Length filtering
