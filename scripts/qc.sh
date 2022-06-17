@@ -5,6 +5,10 @@ stage=$2
 output_folder=$3
 
 
-cat ${input_folder}/pass/*.fastq >> ${input_folder}/${stage}.fastq
+cat ${input_folder}/*.fastq > ${input_folder}/${stage}.fastq
 #run fastqc on all.fastq
-fastqc ${input_folder}/${stage}.fastq -o ${output_folder}
+command="fastqc -t 4 ${input_folder}/${stage}.fastq -o ${output_folder}"
+
+echo $command
+
+$command

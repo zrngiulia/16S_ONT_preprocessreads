@@ -21,6 +21,7 @@ cd ${wkdir}
 
 # create necessary folders
 mkdir -p ${bcalled}
+mkdir -p ${qcrep}
 mkdir -p ${demux}
 mkdir -p ${filt}
 
