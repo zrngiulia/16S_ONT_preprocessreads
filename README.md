@@ -24,4 +24,3 @@ FLO-FLG001 (for Flongle sequencing flow cell)
 FLO-MIN106 (for standard MinION flow cell)
 
 
-ʕ♥ᴥ♥ʔ
