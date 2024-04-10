@@ -16,7 +16,11 @@ To run the standard pre-processing pipeline:
 
 ```
 mkdir /path/to/main_working_directory/
-bash /path/to/preprocess.sh /path/to/main_working_directory /path/to/nanopore_raw_data path/to/this_repo FLO-FLG001
+bash /path/to/preprocess.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
+
+# for the sbatch pipeline
+bash /path/to/preprocess_sbatch1.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
+bash /path/to/preprocess_sbatch2.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
 ```
 
 Choose between:
