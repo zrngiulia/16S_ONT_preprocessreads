@@ -6,6 +6,9 @@
 #SBATCH -p gpu
 #SBATCH --mem 64g
 
+source /home/giuz/.bashrc
+conda activate qc_env
+
 # standard preprocessing pipeline
 
 # folder where preprocessing data will be saved
@@ -46,19 +49,19 @@ echo -e "\n... ... ... ... Starting demultiplexing and barcode trimming ... ... 
 bash ${repo}/scripts/demultiplex.sh ${bcalled}/pass/ ${demux}
 echo -e "\nStep done!\n"
 
-# Length filtering
-echo -e "\n... ... ... ... Starting filtering by length ... ... ... ... \n"
-bash ${repo}/scripts/lengthfilt.sh ${demux} ${filt}
-echo -e "\nStep done!\n"
-
-# Quality control on processed reads
-echo -e "\n... ... ... ... Starting QC2 ... ... ... ... \n"
-bash ${repo}/scripts/qc.sh ${filt} preprocessed ${qcrep}
-echo -e "\nStep done!\n"
-
-# MultiQC
-echo -e "\n... ... ... ... Starting multiQC ... ... ... ... \n"
-bash ${repo}/scripts/multiqc.sh ${qcrep}
-echo -e "\nStep done!\n"
+## Length filtering
+#echo -e "\n... ... ... ... Starting filtering by length ... ... ... ... \n"
+#bash ${repo}/scripts/lengthfilt.sh ${demux} ${filt}
+#echo -e "\nStep done!\n"
+#
+## Quality control on processed reads
+#echo -e "\n... ... ... ... Starting QC2 ... ... ... ... \n"
+#bash ${repo}/scripts/qc.sh ${filt} preprocessed ${qcrep}
+#echo -e "\nStep done!\n"
+#
+## MultiQC
+#echo -e "\n... ... ... ... Starting multiQC ... ... ... ... \n"
+#bash ${repo}/scripts/multiqc.sh ${qcrep}
+#echo -e "\nStep done!\n"
 
 
