@@ -1,9 +1,7 @@
 #!/bin/bash
 #SBATCH --account giuz
-#SBATCH --time 72:00:00
-#SBATCH -c 4
-#SBATCH --gres=gpu:1
-#SBATCH -p gpu
+#SBATCH --time 24:00:00
+#SBATCH -c 32
 #SBATCH --mem 64g
 
 source /home/giuz/.bashrc
