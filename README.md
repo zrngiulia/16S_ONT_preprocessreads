@@ -20,10 +20,9 @@ bash /path/to/preprocess.sh /path/to/main_working_directory /path/to/nanopore_ra
 
 # for the sbatch pipeline
 sbatch /path/to/preprocess_sbatch1.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
-sbatch /path/to/preprocess_sbatch2.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
 ```
 
-Choose between:
+Regarding flow cell codes, choose between:
 
 FLO-FLG001 (for Flongle sequencing flow cell)
 FLO-MIN106 (for standard MinION flow cell)
