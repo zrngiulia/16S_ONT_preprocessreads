@@ -64,4 +64,5 @@ echo -e "\nStep done!\n"
 #bash ${repo}/scripts/multiqc.sh ${qcrep}
 #echo -e "\nStep done!\n"
 
-
+# part 2
+sbatch ${repo}/preprocess_sbatch2.sh $1 $2 $3 $4
