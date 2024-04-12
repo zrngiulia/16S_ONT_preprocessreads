@@ -46,7 +46,7 @@ echo -e "\nStep done!\n"
 
 # Demultiplexing
 echo -e "\n... ... ... ... Starting demultiplexing and barcode trimming ... ... ... ... \n"
-bash ${repo}/scripts/demultiplex.sh ${bcalled}/pass/ ${demux}
+bash ${repo}/scripts/demultiplex_v657.sh ${bcalled}/pass/ ${demux}
 echo -e "\nStep done!\n"
 
 ## Length filtering
