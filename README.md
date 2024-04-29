@@ -16,7 +16,7 @@ It includes the following steps:
 1. MultiQC
 
 
-To run the standard pre-processing pipeline:
+To run the pre-processing pipeline:
 ```
 # For the regular locally run pipeline (Guppy v6.0.1)
 mkdir /path/to/main_working_directory/
