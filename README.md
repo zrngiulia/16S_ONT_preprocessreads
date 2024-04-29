@@ -5,6 +5,7 @@ Scripts to pre-process full-length (V1-V9) 16S rRNA gene reads generated using t
 This is a simple pipeline that starts from FAST5 raw files from any Oxford Nanopore Technologies (ONT) platform, and outputs filtered, trimmed, demultiplexed FASTQ files.
 
 The output files are ready to use for downstream taxonomic classification with the software of choice.
+
 It includes the following steps:
 
 1. High Accuracy (HAC) GPU-based Basecalling of FAST5 files and quality filtering qscore >=9 - Guppy
