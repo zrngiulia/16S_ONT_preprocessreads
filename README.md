@@ -29,7 +29,7 @@ sbatch /path/to/preprocess_sbatch1.sh /path/to/main_working_directory /path/to/n
 Regarding flow cell codes, choose between:
 
 * FLO-FLG001 (for Flongle sequencing flow cell)
-* FLO-MIN106 (for standard MinION flow cell)
+* FLO-MIN106 (for standard SpotON flow cell)
 
 
 Necessary software:
