@@ -16,24 +16,27 @@ It includes the following steps:
 1. MultiQC
 
 
-To run the pre-processing pipeline:
-```
-# For the regular locally run pipeline (Guppy v6.0.1)
-mkdir /path/to/main_working_directory/
-bash /path/to/preprocess.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
-
-# For the sbatch pipeline (Guppy v6.5.7)
-sbatch /path/to/preprocess_sbatch1.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
-```
-
-Regarding flow cell codes, choose between:
-
-* FLO-FLG001 (for Flongle sequencing flow cell)
-* FLO-MIN106 (for standard SpotON flow cell)
-
-
-Necessary software:
+## Necessary software
 
 * Guppy (ONT) (https://cdn.oxfordnanoportal.com/software/analysis/ont-guppy_6.5.7_linux64.tar.gz)
 * fastQC (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 * multiQC (https://github.com/MultiQC/MultiQC)
+
+
+## To run the pre-processing pipeline locally (Guppy v6.0.1):
+```
+mkdir /path/to/main_working_directory/
+bash /path/to/preprocess.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
+```
+
+## To run the pre-processing pipeline using sbatch on server (Guppy v6.5.7)
+```
+mkdir /path/to/main_working_directory
+sbatch /path/to/preprocess_sbatch1.sh /path/to/main_working_directory /path/to/nanopore_raw_data /path/to/this_repo FLO-FLG001
+```
+
+## Flow cell codes
+
+* FLO-FLG001 (for Flongle sequencing flow cell)
+* FLO-MIN106 (for standard SpotON flow cell)
+
